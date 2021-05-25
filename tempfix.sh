@@ -1,1 +1,1 @@
-for i in $(grep "method=" maillog | grep "session=" | grep "rip=" | grep -v "auth failed" | awk '{print $10}' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | sort | uniq); do ip route del blackhole $i; done
+for i in $(grep "method=" /var/log/maillog | grep "session=" | grep "rip=" | grep -v "auth failed" | awk '{print $10}' | grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | sort | uniq); do ip route del blackhole $i; done
