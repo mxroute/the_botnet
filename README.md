@@ -1,3 +1,3 @@
 # the_botnet
 
-Likely a series of botnets with many different owners, but all caught with the same algorithm. This botnet is for sending email spam. Solid gains to be had by blocking the IPs. Use bl.mxrbl.com as an RBL in your MTA to gain real time benefits from the research that created this list.
+The latest iteration of this botnet was discovered when one attacker blew their entire wad in one day, exposing their whole botnet by attempting to brute force attack one specific email account that doesn't even exist.
